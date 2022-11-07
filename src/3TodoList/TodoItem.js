@@ -1,10 +1,6 @@
 function ToDoItem({ item, onCompleteTodo, onDelete }) {
   return (
-    <li
-      key={item.name}
-      className="todo"
-      onClick={() => onCompleteTodo(item.name)}
-    >
+    <li key={item.name} className="todo">
       <div>
         <span
           className="todo-item"
@@ -12,6 +8,7 @@ function ToDoItem({ item, onCompleteTodo, onDelete }) {
             textDecoration: item.isCompleted ? "line-through" : "",
             cursor: item.isCompleted ? "" : "pointer",
           }}
+          onClick={() => onCompleteTodo(item.name)}
         >
           {item.name}
         </span>
