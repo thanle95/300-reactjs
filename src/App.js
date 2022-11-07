@@ -1,5 +1,5 @@
 
-// import TodoList from './3TodoList/TodoList';
+import TodoList from './3.TodoList/TodoList';
 // import FetchData from './5.FetchData/FetchData';
 import WeatherApp from './6.WeatherApp/WeatherApp';
 // import CustomHook from './4.CustomHook/CustomHook';
@@ -13,12 +13,12 @@ function App() {
   return (<>
      {/* <Clock/> */}
      {/* <Stopwatch/> */}
-     {/* <TodoList/> */}
+     <TodoList/>
      {/* <CustomHook/> */}
      {/* <FetchData/> */}
      {/* <WeatherApp/> */}
      {/* <Ref/> */}
-     <Canvas/>
+     {/* <Canvas/> */}
     </>
   );
 }
